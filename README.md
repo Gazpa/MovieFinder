@@ -17,9 +17,7 @@ Tech choices
 
 - No need here to get react router since the app is pretty simple and does not need a lot of navigation
 
-Things to improve
-
-    Having only 2 hours to develop it left me with a list of 'ToDos' pending:
+Things to improve, having only 2 hours to develop it left me with a list of 'ToDos' pending:
 
 - Wanted to animate the sidebar to hide and show with an arrow button above but I need to change some styles to make it absolute position and ended up without having time
 
