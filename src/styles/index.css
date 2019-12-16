@@ -1,0 +1,57 @@
+#page-content {
+  min-height: calc(100vh - 87px);
+  overflow: "auto";
+  padding-top: 70px;
+}
+
+#sidebar {
+  height: 100%;
+  position: fixed;
+}
+
+.poster {
+  display: block;
+  width: 100px;
+  height: 150px;
+  padding: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.poster-mini {
+  width: 50px;
+  height: 75px;
+  padding: 5px;
+  border-radius: 4px;
+  display: block;
+}
+
+.fav-img-wrapper {
+  display: inline-block;
+}
+
+.fav-title-wrapper {
+  display: inline-block;
+  line-height: 75px;
+  vertical-align: top;
+  padding: 0 15px;
+  overflow: hidden;
+  max-width: 112px;
+  max-height: 75px;
+}
+
+.fav-btn-wrapper {
+  display: inline-block;
+  line-height: 75px;
+  vertical-align: top;
+}
+
+.fav-no-content {
+  padding: 10px;
+}
+
+.navbar.navbar-inverse {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}

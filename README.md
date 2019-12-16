@@ -1,44 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The official Movie Search Engine (2H Max after setup Home task)
 
-## Available Scripts
+- To run the project first you need to npm install in the folder location
+- Create a .env file in root directory with the following values:
+  - REACT_APP_MOVIE_API=https://api.themoviedb.org/3/
+  - REACT_APP_MOVIE_API_KEY=1e69d118335e3a39578d8029d6583993
+  - REACT_APP_MOVIE_API_POSTER_URL=https://image.tmdb.org/t/p/w300_and_h450_bestv2
+- Then run npm start
 
-In the project directory, you can run:
+Tech choices
 
-### `npm start`
+- axios is the best and lightest library I know out there to make the API calls. Easy to use and reliable. Wrapping the results in a promise object makes it easy to work with.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Redux is a great choice to keep application state and I have already adquired experience on how to use it
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- Redux Thunk is here to handle function as actions dispatches in middleware, so it would check the type that returns each action and handle the ones that are functions
 
-### `npm test`
+- No need here to get react router since the app is pretty simple and does not need a lot of navigation
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Things to improve
 
-### `npm run build`
+    Having only 2 hours to develop it left me with a list of 'ToDos' pending:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Wanted to animate the sidebar to hide and show with an arrow button above but I need to change some styles to make it absolute position and ended up without having time
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- Didn't find a way to search for videos since the flag in the API was always false
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Should have added a movie details component where I could show some more details for each movie when selected
