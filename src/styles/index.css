@@ -27,6 +27,7 @@
 }
 
 .fav-img-wrapper {
+  width: 25%;
   display: inline-block;
 }
 
@@ -36,11 +37,12 @@
   vertical-align: top;
   padding: 0 15px;
   overflow: hidden;
-  max-width: 112px;
-  max-height: 75px;
+  height: 75px;
+  width: 55%;
 }
 
 .fav-btn-wrapper {
+  width: 20%;
   display: inline-block;
   line-height: 75px;
   vertical-align: top;
